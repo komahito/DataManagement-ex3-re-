@@ -1,8 +1,14 @@
+import java.util.Scanner;
 import java.util.Random;
 class HeadorTail {
     public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
         Random rand = new Random();
         int headCnt = 0, tailCnt = 0;
+        System.out.print("Who are you?\n> ");
+        String name = sc.nextLine();
+        sc.close();
+        System.out.println("Hello, "+name+"!");
         System.out.println("Tossing a coin...");
         for (int i = 0; i < 3; i++) {
             System.out.print("Round "+ (i + 1) +": ");
