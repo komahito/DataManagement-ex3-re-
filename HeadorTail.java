@@ -22,7 +22,7 @@ class HeadorTail {
             }
         }
         System.out.println("Head: "+headCnt+", "+"Tails: "+tailCnt);
-        if (headCnt > tailCnt) System.out.println("You won");
-        else System.out.println("You lost");
+        if (headCnt > tailCnt) System.out.println(name + " won!");
+        else System.out.println(name + " lost");
     }
 }
